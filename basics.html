@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITC 122</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Fundamentals</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="tools.html">Tools</a></li>
+        </ul>
+    </nav>
+    <div>
+    <p>Radio Frequency (RF)
+    A signal frequency with greater than 300 MHz is considered RF.
+    
+    In modern cellular standard LTE, the low band roughly starts at 600 MHz and extends to 6000 MHz refer
+    B46 is the last LTE band in frequency.
+    
+    Carrier Signal
+    Its a high-frequency signal that “carries” the lower bandwidth of “real” information signals such voice and data
+    
+    The reason is that due to the miniaturization of consumer electronics, a high RF carrier signal is needed for efficient
+    electromagnetic radiation using small antenna in transmission and reception of wireless networks.
+    
+    Baseband Signal
+    Its a low bandwidth analog signal containing data such as voice and data typically found after downconverting from RF
+    to DC before analog to digital converter (ADC) in radio receiver or right after digital to analog converter (DAC) in
+    radio transmitter.
+    
+    Two main reasons for using a low BW baseband signal are:
+    
+    Come within sampling range of ADC/DAC: sampling rates are limited on ADC/DAC mixed-signal hardware which is needed for
+    pre/post-digital signal processing.
+    
+    Improved selectivity: An easier filter design with sharper rolloff can be constructed at lower frequencies.
+    
+    Quadrature: Orthogonal relationship (i.e. 90 degrees) between two vectors.
+    
+    Quadrature I/Q Components: two components I (in-phase signal) and Q (out-of-phase signal) are 90 degrees out of phase.
+    IQ signals are the building block of modern digital modulation and demodulation schemes.
+    
+    Modulation
+    Modulation means encoding a message. In the context of RF, one can think of it in two ways:
+    
+    Encoding a baseband message on a carrier frequency signal.
+    
+    Frequency shifts the baseband signal to a radio frequency signal.
+    
+    Analog Modulation
+    It is used to encode analog baseband signal onto an RF carrier signal for long-range transmission with low data
+    bandwidth such as voice, and small data packets.
+    
+    Typical analog modulations are:
+    
+    Amplitude Modulation (AM): analog baseband signal is encoded on an RF carrier signal in the form of varying RF carrier
+    signal amplitude.
+    
+    Frequency Modulation (FM): analog baseband signal is encoded on an RF carrier signal in the form of varying RF carrier
+    signal frequency
+    
+    Digital Modulation.
+    It is used to encode digital baseband signal (i.e. binary bits 0 and 1) onto an RF carrier signal for short to mid-range
+    transmission with high data bandwidth such as large file download and video streaming.
+    
+    Typical digital modulations are:
+    
+    Amplitude Shift Keying: 1-bit binary signal modulation scheme where 1 and 0 are represented by turning on and off RF
+    carrier transmission.
+    
+    Frequency Shift Keying: 1-bit binary signal modulation scheme where 1 and 0 are represented by changing RF carrier
+    signal from high to low frequency.
+    
+    Phase Shift keying: 1-bit symbol binary signal modulation scheme where 1 and 0 are represented by change RF carrier
+    signal phase relationship.
+    
+    Quadrature Amplitude modulation (QAM): a baseband signal is encoded by summing two carrier signals 90 degrees out of
+    phase (i.e. I & Q components) resulting in a single signal that is controlled by phase and amplitude variation of two
+    I/Q carriers.
+    
+    Digital symbols are reconstructed by a combination of amplitude and phase relationship of the I & Q components. This is
+    very clever and powerful because by varying amplitude and phase relationships of I & Q carriers, a range of unique
+    symbols can be created resulting in an increase of bits/symbol; Hence higher data throughput is achieved.
+    
+    This technique increases spectral efficiency (i.e. more bits/symbols transmitted per fixed channel bandwidth).
+    
+    Quadrature Phase shift Keying (QPSK): It’s a 2-bit modulation technique with 4 unique symbols, 00, 01, 10, and 11 are
+    represented by phase change (45,135, 225, or 315 degrees) of the carrier signal using I and Q components in quadrature
+    amplitude modulation (QAM).
+    
+    Note: QPSK is a special type of 4-QAM where the resultant signal has equal amplitude with varying phases.
+    
+    Analog/Digital Demodulation
+    Demodulation is analogous to decoding an RF signal which involves removing carrier frequency component from the RF
+    signal leaving the baseband signal behind for further processing.
+    
+    Basic Principles of Operations
+    RF system is responsible for the transmission and reception of wireless signals.
+    
+    RF Transmission: An RF signal is created by upshifting a low bandwidth (DC-like) signal to radio frequency by a radio
+    transmitter.
+    
+    RF reception: An RF signal is picked up by the antenna and downshifted to a low bandwidth (DC-like) signal by a radio
+    receiver.</p>
+    </div>
+
+</body>
+
+</html>
